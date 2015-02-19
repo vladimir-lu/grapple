@@ -1,0 +1,4 @@
+# List of contributors ordered by date of first contribution descending
+# $ git log --reverse --format='%aN <%aE>' | sort -f | uniq
+
+Vladimir Lushnikov <vladimir@slate-project.org>

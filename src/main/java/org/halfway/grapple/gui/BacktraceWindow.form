@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.halfway.grapple.gui.BacktraceWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="2">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="b7e80">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="cef4a" class="javax.swing.JTextArea" binding="backtraceTextArea">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <lineWrap value="true"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="8dcf" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <grid id="33b14" layout-manager="BorderLayout" hgap="0" vgap="4">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2aa0" class="javax.swing.JLabel">
+            <constraints border-constraint="North"/>
+            <properties>
+              <labelFor value="cef4a"/>
+              <text value="Unfortunately the application could not launch due to the error below:"/>
+            </properties>
+          </component>
+          <component id="5c34" class="javax.swing.JLabel" binding="errorExplanation">
+            <constraints border-constraint="West"/>
+            <properties>
+              <font style="1"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
